@@ -34,7 +34,7 @@ el2=$( echo ${floatHave:1:1} )
 if [[ el2 -lt 3 ]]
 then echo "You need update Docker. Do it now? (yes/no)"
 	read q
-	if [[ q == "yes" ]]
+	if [[ $q == "yes" ]]
 	then sudo apt-get upgrade docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 	echo "Docker is updated"
 	else echo "Don't forget to do it later"
